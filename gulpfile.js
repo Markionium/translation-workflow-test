@@ -7,7 +7,7 @@ const i18next = require('i18next-parser');
 
 gulp.task('default', () => gulp
     .src('src/**/*.js')
-    .pipe(i18next({ locales: ['en', 'nl', 'fr']}))
+    .pipe(i18next({ locales: ['en', 'nl', 'fr','sv']}))
     .pipe(rename((path) => {
         path.basename = path.basename.replace('translation', path.dirname);
     }))
