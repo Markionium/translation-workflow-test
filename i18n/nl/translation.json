@@ -1,0 +1,5 @@
+{
+  "Hello": "Hallo",
+  "Number": "{{count}} nummer",
+  "Number_plural": "{{count}} nummers"
+}

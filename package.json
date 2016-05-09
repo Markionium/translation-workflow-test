@@ -1,0 +1,16 @@
+{
+  "name": "translation-workflow-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "i18n": "i18next ./src/ -o ./i18n -l en,nl"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "i18next": "^2.5.1",
+    "i18next-parser": "^0.7.0"
+  }
+}
