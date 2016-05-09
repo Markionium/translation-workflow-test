@@ -1,5 +1,5 @@
 {
+    "Goodbye": "Hej då.",
     "Hello": "Hej",
-    "Number": "{{count}} nummer",
-    "Number_plural": "{{count}} nummer"
+    "Number": "Nummer"
 }
