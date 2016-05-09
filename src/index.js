@@ -2,6 +2,14 @@ const i18n = require('i18next');
 const uiLocale = 'nl';
 const fallbackLng = 'fr';
 
+const d2 = {
+  i18n: {
+    getTranslation(key) {
+      return i18n.t(key);
+    },
+  },
+}
+
 i18n.init({
   // "debug": true,
   "lng": uiLocale,
@@ -22,4 +30,5 @@ i18n.init({
   console.log(i18n.t('Number', { count: 1 }));
   console.log(i18n.t('Number', { count: 5 }));
   console.log(i18n.t('Goodbye'));
+  console.log(d2.i18n.getTranslation('Hello World'));
 });
