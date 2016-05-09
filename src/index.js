@@ -1,19 +1,19 @@
 const i18n = require('i18next');
+const uiLocale = 'nl';
+const fallbackLng = 'fr';
 
 i18n.init({
-  // "debug": true,
-  "lng": "nl",
-  // "fallbackLng": false,
-  // "keySeparator": false,
-  // "nsSeparator": false,
+  "debug": true,
+  "lng": uiLocale,
+  "fallbackLng": fallbackLng,
   "returnEmptyString": false,
   resources: {
-    en: {
-      translation: require('../i18n/en/translation.json'),
+    [uiLocale]: {
+      translation:  require(`../i18n/${uiLocale}.json`),
     },
-    nl: {
-      translation: require('../i18n/nl/translation.json'),  
-    }
+    [fallbackLng]: {
+      translation: require(`../i18n/${fallbackLng}.json`),
+    },
   }
 }, (err, t) => {
   // initialized and ready to go!
