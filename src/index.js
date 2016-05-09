@@ -23,4 +23,5 @@ i18n.init({
   console.log(i18n.t('Number', { count: 5 }));
   console.log(i18n.t('Goodbye'));
   console.log(i18n.t('Awesome!'));
+  console.log(i18n.t('Jason lost in translation?'));
 });
